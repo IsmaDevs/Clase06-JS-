@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clase 06</title>
+    <script src="./agenda.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Agenda 2023</h1>
+    </header>
+    <main>
+      <br />
+      <h3>Ingresa tu Contacto</h3>
+      <br />
+      <!--Formulario para agregar un nuevo Contacto-->
+      <form action="">
+        <label for="">nombre</label>
+        <input type="text" id="name" />
+        <br />
+        <label for="">telefono</label>
+        <input type="number" id="tel" />
+        <br />
+        <label for="">Direccion</label>
+        <input type="text" id="dir" />
+        <br />
+        <label for="">Email</label>
+        <input type="email" id="mail" />
+        <br />
+        <button type="button" id="agregar" class="btn btn-primary block">
+          agregar usuario
+        </button>
+      </form>
+      <br />
+      <br />
+      <h3>Listado de Contactos</h3>
+      <!--Aqui mostrara la tabla con contactos-->
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <!--Estas son las columnas-->
+            <th scope="col">Id</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">telefono</th>
+            <th scope="col">Direccion</th>
+            <th scope="col">Email</th>
+          </tr>
+        </thead>
+        <tbody id="tr">
+          <!--Aqui dentro mostrara los datos-->
+        </tbody>
+      </table>
+      <br /><br />
+      
+    </main>
+    <footer>
+      <h4>RP web developer</h4>
+    </footer>
+  </body>
+</html>
